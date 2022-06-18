@@ -1,5 +1,4 @@
 package org.suai.laba3.Matrixes;
-//package org.suai.laba3.Matrixes;
 import org.suai.laba3.Matrixes.Matrix;
 
 import org.suai.laba3.Matrixes.Matrix;
@@ -26,16 +25,6 @@ public class SquareMatrix extends Matrix {
         }
     }
     @Override
-//    public Matrix sum(Matrix mtx1) {
-//        Matrix result = new Matrix(this.row, this.column);
-//        for (int i = 0; i < this.row; i++) {
-//            for (int j = 0; j < this.column; j++) {
-//                this.mtx[i][j] += mtx1.mtx[i][j];//this.getElement(i,j) + mtx1.getElement(i, j);
-//            }
-//        }
-//        result = this;
-//        return result;
-//    }
     public Matrix sum(Matrix m) {
         if ( this.row != m.row & this.column != m.column) {
             throw  new MyException("Matrix sizes are different!");
