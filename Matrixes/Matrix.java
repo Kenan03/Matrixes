@@ -1,6 +1,4 @@
 package org.suai.laba3.Matrixes;
-//package org.suai.laba3.Matrixes;
-//import org.suai.laba3.MyExceptions.MyException;
 import org.suai.laba3.MyExeptions.MyException;
 import java.util.Arrays;
 
@@ -24,7 +22,7 @@ public class Matrix {
     }
 
     public Matrix sum(Matrix m) {
-        if ( this.row != m.row & this.column != m.column) {
+        if ( this.row != m.row || this.column != m.column) {
             throw  new MyException("Matrix sizes are different!");
         }
         Matrix res = new Matrix(this.row, this.column);
